@@ -1,7 +1,27 @@
-h1 {
-	font-size: 30px
+body {
+	text-align: center;
+	background: #101317;
+	color: white;
+	font-family: 'helvetica neue', sans-serif;
+	font-weight: 100;
+	font-size: 50px;
 }
 
-p {
-	font-size: 12px;
+.controls {
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100px;
+}
+
+
+main p {
+	font-size: 35px;
+	padding: 10px;
+}
+
+footer p{
+	font-size: 20px;
+	padding-top: 10px;
 }
