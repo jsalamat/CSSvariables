@@ -16,7 +16,15 @@ function handleUpdate() {
 	const suffix = this.dataset.sizing || '';
 	// for some that dont have sizing we put or nothing to avoid append undefine at the end
 	console.log(suffix);
-
+	// select and update a variable by selecting entire document by root
+	// and set property of base spacing and blur the reason div use name=""
+	console.log(this.name);
+	document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+	// to set the property of --base, --spacing, -- blur, but these are variables instead
+	// used backticks to plop the variable name in and set to this value
+	// problem there is no pixel append at the end
+	// this reason suffix variable created to append px at the end
+	// this help update any css variables in this element 
 
 }
 
