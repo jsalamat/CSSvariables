@@ -1,3 +1,27 @@
+/* --- CSS variables is declare on an element ----- */
+/* --- The element here is root which is the highest level on css elements--*/
+
+/* This is setup for default variables */
+:root {
+	--base: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+}
+
+/* To use CSS Variables we passed in: var(--PLACEVARIABLESHERE) */
+/* The variable is reference and use here */
+img {
+	padding: var(--spacing);
+	background: var(--base);
+	filter: blur(var(--blur));
+}
+
+.h1, .fun {
+	color: var(--base);
+}
+
+/* ---This CSS style under this comment line is unrelated to CSS variables ----- */
+
 body {
 	text-align: center;
 	background: #101317;
@@ -14,7 +38,6 @@ body {
 input {
 	width: 100px;
 }
-
 
 main p {
 	font-size: 35px;
