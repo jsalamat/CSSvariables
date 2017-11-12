@@ -7,6 +7,13 @@ const inputs = document.querySelectorAll('.controls input');
 // that was recently added to node list
 function handleUpdate() {
 	console.log(this.value);
+	// To get the value out of this by getting the suffix
+	// this reason there is a data-sizing which is a data attribute
+	// prefix "data-PLACEsuffixvalue" ex data-sizing="px"
+	// dataset is the object that will contain all the data attribute from specifix element
+	console.log(this.dataset)
+
+
 }
 
 inputs.forEach(input => input.addEventListener('change', handleUpdate));
