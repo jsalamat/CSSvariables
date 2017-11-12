@@ -14,3 +14,5 @@ inputs.forEach(input => input.addEventListener('change', handleUpdate));
 // loop over the forEach input, addEventListener to listen
 // for the change in the event
 // and when its called its going to handleUpdate
+inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+// listen to for a mousemove when move the value to trigger a change
